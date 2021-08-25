@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8"> <!--This specifies the character encoding for the HTML Document-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Complete Website Design Using HTML and CSS </title>
+  <link rel="stylesheet" href="style.css"> <!--Links to CSS-->
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+
+
+<body>
+  <section id="header">
+    <div class="container">
+      <img src="images/logo.png" class="logo">
+      <div class="header-text">
+        <h1>The purpose is to  <br> teach, bring learning to people</h1>
+        <span class="square"></span>
+        <p> Description </p>
+        <button class="common-btn">Read more</button>
+        <div class="line">
+          <span class="line1"></span><br>
+          <span class="line2"></span><br>
+          <span class="line3"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav id="sideNav">
+    <ul>
+      <li> <a href="#header"> Home </a> </li>
+      <li> <a href="#about"> About Us </a> </li>
+      <li> <a href="#features"> Features </a> </li>
+      <li> <a href="#courses"> Courses </a> </li>
+      <li> <a href="#offers"> Offer </a> </li>
+      <li> <a href="#contact"> Contact </a> </li>
+    </ul>
+  </nav>
+  <img src="images/menu.png" id="menuBtn">
+
+  <!--About-->
+
+  <section id="about"> 
+    <div class="about-left-column"> 
+      <img src="images/about.png">
+    </div>
+    <div class="about-right-column">
+      <div class="about-text">
+        <h1> About Us </h1>
+        <span class="square"></span>
+        <p>Description </p> <br> <br>
+        <div class="line">
+          <span class="line1"></span><br>
+          <span class="line2"></span><br>
+          <span class="line3"></span>
+        </div>
+        <h2> Interesting Quote </h2>
+        <h3> ----- Angkoon Angkoonsawaengsuk</h3>
+      </div>
+    </div>
+  </section>
+
+  <!--Feature-->
+
+  <section id="features">
+    <div class="featureRow">
+      <div class="featureCol">
+        <img src="images/pic-1.png">
+        <h4>Learn Anywhere</h4>
+        <p>Switch between your computer, tablet or mobile device</p>
+      </div>
+
+      <div class="featureCol">
+        <img src="images/pic-2.png">
+        <h4>Expert Teachers</h4>
+        <p>Learn from industry experts who are pasionate about teaching</p>
+      </div>
+      
+      <div class="featureCol">
+        <img src="images/pic-3.png">
+        <h4>Unlimited Access</h4>
+        <p>Choose what you would like to learn from our extensive subscription library</p>
+      </div>
+    </div>
+    <div class="featureBtn">
+      <div class="line">
+        <span class="line1"></span><br>
+        <span class="line2"></span><br>
+        <span class="line3"></span>
+      </div>
+      <button class="common-btn">Start Free Trial</button>
+    </div>
+
+  </section>
+
+  <!--Courses-->
+
+  <section id="courses">
+    <div class="containter courseRow">
+      <div class="course-left-column">
+        <div class="course-text">
+          <h1>Browse Our Top <br> Courses </h1>
+          <span class="square"></span>
+          <p> Description </p>
+          <button class="common-btn">View All Courses</button>
+          <div class="line">
+            <span class="line1"></span><br>
+            <span class="line2"></span><br>
+            <span class="line3"></span>
+          </div>
+        </div>
+      </div>
+      <div class="course-right-column">
+        <img src="images/course.png">
+      </div>
+    </div>
+  </section>
+
+  <!--Offers-->
+
+  <section id="offers">
+    <div class="offer-left-column"> 
+      <img src="images/offer.png">
+    </div>
+    <div class="offer-right-column">
+      <div class="offer-text">
+        <h1> Limitless learning <br> limitless possibilities </h1>
+        <span class="square"></span>
+        <p> Description </p> 
+        <button class="common-btn">Start Free Trial</button> 
+        <div class="line">
+          <span class="line1"></span><br>
+          <span class="line2"></span><br>
+          <span class="line3"></span>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!--Contact-->
+
+  <section id="contact">
+    <div class="container contactRow">
+      <div class="contact-left-column">
+        <h1> Sign up to join our <br> learning community </h1>
+        <form>
+          <input type="text" placeholder="Enter Name">
+          <input type="email" placeholder="Enter Email">
+          <input type="password" placeholder="Enter Password">
+          <div class="btnbox">
+            <button class="common-btn">Sign Up</button> 
+            <button class="common-btn">Start Free Trial</button> 
+          </div>
+        </form>
+        <div class="line">
+          <span class="line1"></span><br>
+          <span class="line2"></span><br>
+          <span class="line3"></span>
+        </div>
+      </div>
+      <div class="contact-right-column">
+        <img src="images/contact.png">
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <section id="footer">
+    <div class="container footerRow">
+      <hr>
+      <div class="footer-left-column">
+        <!--<p>Left Column</p> Demo Text--> 
+        <div class="footer-links">
+          <div class="link-title">
+            <h4>Product</h4>
+            <small>Our Plan</small> <br>
+            <small>Free Trial</small>
+          </div>
+          <div class="link-title">
+            <h4>About Us</h4>
+            <small>Request Demo</small> <br>
+            <small>FAQs</small>
+          </div>
+          <div class="link-title">
+            <h4>Support</h4>
+            <small>Features</small> <br>
+            <small>Contact Us</small>
+          </div>
+          <div class="link-title">
+            <h4>Explore</h4>
+            <small>Find a nonprofit</small> <br>
+            <small>Coporate Solution</small>
+          </div>
+        </div>
+      </div>
+      <div class="footer-right-column">
+        <!--<p>Right Column</p>-->
+        <div class="footer-info">
+          <div class="copyright-text">
+            <small>Support@Xypo.com</small><br>
+            <small>Copyright 2021 Xypo</small>
+          </div>
+          <div class="footer-logo">
+            <img src="images/logo.png"> 
+            <button class="common-btn"> English </button> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Social Icons-->
+  <div class="social-icons">
+    <img src="images/facebook.png">
+    <img src="images/instagram.png">
+    <img src="images/twitter.png">
+    <img src="images/linkedin.png">
+  </div>
+
+  <script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+    sideNav.style.right = "-250px"; /*This part does the animation*/
+    menuBtn.onclick = function(){
+      if (sideNav.style.right == "-250px"){
+        sideNav.style.right = "0px";
+      } else {
+        sideNav.style.right = "-250px";
+      }
+    }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1000,
+      speedAsDuration: true
+    });
+  </script>
+  
+</body>
+
+
+</html>

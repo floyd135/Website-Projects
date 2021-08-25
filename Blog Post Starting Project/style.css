@@ -1,0 +1,106 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} 
+
+body{
+  font-family: Helvetica Neue, Arial;
+  font-size: 18px;
+}
+
+h1,h2{
+  font-family: Helvetica Neue, Arial;
+  color: rgba(24, 133, 24, 0.6); /*Should not be the same color = Bad Practice*/
+}
+
+h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+h2{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/*
+p{
+  font-size: 18px;
+  text-align: justify;
+  /*font-family: Helvetica Neue, Arial;
+}
+*/
+
+a{
+  text-decoration: none;
+}
+
+.maintext{
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#authortext{
+  font-size: 22px;
+  margin-top: 35px;
+  float: left;
+  margin-left: 20px;
+}
+
+.container{
+  width: 1140px;
+  margin-left: auto; /*Auto means the content will be adjusted automatically*/
+  margin-right: auto;
+  margin-top: 20px;
+  margin: 20px auto 0 auto;/*Top Right Bottom Left*/
+}
+
+.blogpost{
+  /*background-color: #0000ff;*/
+  width: 75%;
+  float: left;
+  padding-right: 30px;
+  position: relative;
+}
+
+.otherpost{
+  /*background-color: green;*/
+  width: 25%;
+  float: left;
+}
+
+.authorbox{
+  /*background-color: yellow;*/
+  border-top: 1px solid rgb(19, 112, 26);
+  padding-top: 20px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.other{
+  margin-bottom: 40px;
+}
+
+.authorbox img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  float: left;
+}
+
+.blogpost img{
+  height: 150px;
+  width: auto;
+}
+
+.date{
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
