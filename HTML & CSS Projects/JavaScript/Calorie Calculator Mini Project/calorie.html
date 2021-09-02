@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+  </head>
+
+  <body>
+    <script>
+      var inputCaloriesByDay = function(day) {
+
+        day = day.toLowerCase();
+
+        if (day == "monday") {
+          return 3500;
+        } else if (day == "tuesday") {
+          return 3000;
+        } else if (day == "wednesday") {
+          return 2500;
+        } else if (day == "thursday") {
+          return 2000;
+        } else if (day == "friday") {
+          return 1500;
+        } else if (day == "saturday") {
+          return 1000;
+        } else if (day == "sunday") {
+          return 1500;
+        } else {
+          return "Please choose a valid day";
+        }
+      }
+
+      function getTotalCalories() {
+        var totalCalorie = inputCaloriesByDay("monday") + inputCaloriesByDay("tuesday") + inputCaloriesByDay("wednesday") +inputCaloriesByDay("thursday") + inputCaloriesByDay("friday")+inputCaloriesByDay("saturday")+inputCaloriesByDay("sunday")
+        return totalCalorie;
+      }
+
+      function idealDailyCalories() {
+        var idealCalorie = 1500;
+        return idealCalorie * 7;
+      }
+
+      function calculateHealthPlan() {
+        var actualCalorie = getTotalCalories();
+        var idealCalorie = idealDailyCalories();
+
+        if (actualCalorie > idealCalorie) {
+          return "Time to head to the gym";
+        } else if (actualCalorie < idealCalorie) {
+          return "Time for seconds";
+        } else {
+          return "You ate just the right amount of food!";
+        }
+      }
+
+      console.log(calculateHealthPlan());
+    </script>
+  </body>
+
+</html>

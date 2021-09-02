@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<!--https://fireship.io/lessons/wavy-backgrounds/-->
+
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
+  <!--
+    <style>
+      body {
+        margin: 0;
+        font-family: "Open-sans", san-serif;
+        color: white;
+      }
+      
+      section {
+          position: relative;
+          display: flex; /*Can look at the properties in inspection Google Chrome*/ 
+          flex-direction: column; 
+          align-items: center;
+          padding: 100px 20vw; /*vw = viewport width*/
+      }
+
+    </style> -->
+
+</head>
+
+<body>
+  <section class="blue">
+    <h1>Nice Curves</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, eius eligendi dolore aperiam reiciendis
+      enim repudiandae. Consequuntur et praesentium expedita ipsam, eos dolorum explicabo laborum laboriosam cupiditate
+      modi sit. Numquam.</p>
+    <div class="curve"></div>
+    <!--Empty Div = Bad Practice-->
+  </section>
+
+  <section class="bubble">
+    <h1>Nice Curves</h1>
+    <p>Nulla veritatis aperiam porro ipsum ex architecto labore soluta quos et, neque ab voluptas voluptates libero
+      saepe iste doloremque qui, ratione quam voluptatibus nesciunt. Itaque ullam et dolores id pariatur.</p>
+  </section>
+
+  <section class="dark">
+    <h1>Nice Curves</h1>
+    <p>Quia ipsum repudiandae hic, nulla, velit dolorem impedit laboriosam commodi maiores, beatae enim accusantium
+      sequi consectetur? Commodi fugiat voluptate ducimus deleniti maxime, nulla quaerat explicabo nobis repellendus
+      nisi, ratione doloribus!</p>
+  </section>
+
+  <section class="red">
+    <h1>Nice Curves</h1>
+    <p>In error aut adipisci nihil quod vel quas praesentium similique hic eius excepturi minima, aperiam quam dolorem
+      molestiae repudiandae. Sapiente dignissimos deleniti reiciendis provident animi eligendi repellat quos? Velit,
+      pariatur!</p>
+    <div class="wave">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <div class="spacer layer1"></div>
+
+  <section>
+    <h1>Nice Curves</h1>
+    <p>A quos, alias illo rerum reiciendis quam beatae? Sequi, dolores velit, rerum atque voluptatum nesciunt cupiditate
+      illo optio accusamus fuga error pariatur ea illum inventore amet blanditiis officiis accusantium eveniet.</p>
+  </section>
+
+  <div class="spacer layer2 flip"></div>
+  <section class="pink">
+    <h1>Nice Curves</h1>
+    <p>Assumenda fuga inventore beatae sit omnis similique eum nobis! Quos odio assumenda, natus enim eveniet soluta.
+      Necessitatibus velit amet illum. Doloribus modi pariatur amet quibusdam porro sunt quod. Sint, suscipit.</p>
+    <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      
+      <g transform="translate(479.8159125253139 303.00353864688645)">
+        <path id="blob1"
+          d="M105.6 -122.8C133.4 -77.8 150.2 -38.9 152.1 1.9C154 42.7 141 85.3 113.2 113C85.3 140.7 42.7 153.3 4.7 148.6C-33.2 143.9 -66.5 121.8 -96.3 94.1C-126.1 66.5 -152.6 33.2 -151.9 0.7C-151.2 -31.8 -123.3 -63.6 -93.5 -108.6C-63.6 -153.6 -31.8 -211.8 3.5 -215.4C38.9 -218.9 77.8 -167.8 105.6 -122.8"
+          fill="#BB004B"></path>
+      </g>
+
+      <g transform="translate(429.55713157349567 253.60816606005892)" style="visibility: hidden;">
+      <path id="blob2" d="M116.7 -102.5C161.7 -71.7 215.8 -35.8 226.9 11.1C238 58 206 116 161 152C116 188 58 202 11.7 190.3C-34.6 178.6 -69.3 141.3 -91.8 105.3C-114.3 69.3 -124.7 34.6 -127.5 -2.8C-130.3 -40.3 -125.6 -80.6 -103.1 -111.4C-80.6 -142.3 -40.3 -163.6 -2.2 -161.4C35.8 -159.2 71.7 -133.3 116.7 -102.5" fill="#BB004B"></path></g>
+    </svg>
+
+    <script>
+      const tween = KUTE.fromTo (
+        '#blob1',
+        { path: '#blob1'}, 
+        { path: '#blob2'},
+        {repeat: 999, duration: 3000, yoyo: true}
+      )
+
+      tween.start()
+    </script>
+  </section>
+  <div class="spacer layer2"></div>
+
+  <section>
+    <h1>Nice Curves</h1>
+    <p>Deserunt quam pariatur voluptatem dolorem quidem porro facilis et, dolor dolores quasi explicabo obcaecati ipsa
+      aut veniam asperiores quod nam recusandae distinctio? Ex, assumenda! Consequatur animi quaerat magnam nesciunt
+      libero!</p>
+  </section>
+
+  <section>
+    <h1>Nice Curves</h1>
+    <p>Repudiandae eius facilis dolores impedit. Facere pariatur eius eligendi, omnis cupiditate mollitia, quod
+      recusandae, aliquid tempore animi nisi? Quae delectus aspernatur molestiae atque nam. Saepe architecto maiores
+      iure asperiores possimus?</p>
+  </section>
+</body>
+
+</html>

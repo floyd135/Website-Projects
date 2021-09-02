@@ -1,0 +1,181 @@
+.Hello{ /*.Title is the class name*/
+  /*This is External CSS-*/
+  /*
+  font-size: 40px;
+  font-weight: bold;
+  background-color: red;
+  */
+
+  /*background: rgba(0,0,0,0.5);*/ 
+  /*rgba a = alpha which is opacity (0 < a < 1)*/
+
+  /* Background Picture
+  background-image: url(Images/user2.jpg);
+  height: 700px;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  */
+  
+  
+  /*
+  border-style: dotted;
+  border-width: 2px;
+  border-color: red;
+  height: 500px;
+  width: 50%;
+  */
+  
+  /*min-width: none;*/ /*The minimum width DEPENDS on the screen*/
+  /*border: 2px dashed red; This works the same as up the previous lines*/
+  /*border-bottom: 10px solid green;
+  border-top-left-radius: 20px;*/ /*This will make the edge curve*/
+  /*border-top-right-radius: 20px;*/
+
+  /*Cursor*/
+  /*cursor: pointer;*/ /*Change the cursor to pointer when pointed at the class*/
+
+  /*Float*/
+  /*float: right; */ /*Align the content of the web page*/
+
+  /*Display*/
+  /*display: none;*/ /*This will make everything in the class invisible*/
+
+  /*Visibility*/
+  /*visibility: hidden;*/ /*Same as display none*/
+
+  /*line-height: 30px;*/ /*This adjusts the spacing b/w line*/
+
+  /*font-style: italic;*/
+
+  border: 2px solid red;
+  margin: 100px 200px 10px 5px; /*This changes the margin individually*/
+  padding: 40px;
+}
+
+.Hello p{
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 10px; /*Spacing between each letter*/
+  text-shadow: 10px 5px 5px black; /* X-offset Y-offset Blur Color*/
+}
+
+.Hello h1{
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  word-spacing: 10px;
+}
+
+.Hello .Inner-hello p{
+  text-align: right;
+}
+
+ul{
+  /*list-style: none;*/ /*This removes the bulletpoint*/
+  list-style: square;
+}
+
+input{
+  /*outline: none;*/ /*This removes the outline when clicked*/
+  outline-color: blue;
+}
+
+p2{
+  font-size: 100px;
+  display: block;
+}
+
+p2:hover{
+  color:red;
+  /*transition: 1s;*/
+  animation: motion 2s linear infinite;
+} 
+
+@keyframes motion{
+  100%{
+    transform: translateX(400px);
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.demo{
+  width: 700px;
+  height: 700px;
+  background: #009688;
+  margin: 50px auto;
+  position: relative; /*This positions related to its normal position*/
+  display: flex; /*Everything lines up in a row*/
+  /*align-items: flex-end;*/
+  /*justify-content: space-around;*/
+  flex-direction: row-reverse;
+}
+
+/*
+.demo-inner{
+  width: 200px;
+  height: 100px;
+  background: red;
+  color: #fff;
+  font-size: 24px;
+  
+  position: absolute; /*This positions based on nearest positioned ancestor*/
+  /*
+  top: 10px;
+  right: 50px;
+} 
+*/
+/*
+.demo::after {
+  content: "";
+  width: 100px;
+  height: 50px;
+  background: red;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+}
+
+.demo::before {
+  content: "";
+  width: 100px;
+  height: 50px;
+  background: red;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+}
+*/
+
+.demo-inner{
+  width: 150px;
+  height: 150px;
+  background: red;
+  font-size: 24px;
+  color: #fff;
+  /*padding: 20px;*/
+}
+
+.demo-inner:nth-child(1){ /*nth-child - The same named class*/
+  /*flex-basis: 50%;*/
+  /*flex-grow: 10;*/
+  background: red;
+}
+
+.demo-inner:nth-child(2){
+  /*flex-shrink: 2;*/
+  background: green;
+}
+
+.demo-inner:nth-child(3){
+  background: beige;
+}
+
+.demo-inner:nth-child(4){
+  background: black;
+}

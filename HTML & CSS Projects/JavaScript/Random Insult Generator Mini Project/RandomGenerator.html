@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Random Insult Generator Project</title>
+  </head>
+
+  <body>
+    <script>
+      
+      var randomBodyParts = ['heads', 'arms', 'legs', 'feet', 'toes'];
+
+      var randomAdjectives = ['tall', 'small', 'huge', 'blue'];
+
+      var randomWords = ['engine', 'budge', 'stab', 'gravel'];
+
+      var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 5)];
+
+      var randomAdjective = randomAdjectives[Math.floor(Math.random() * 4)];
+
+      var randomWord = randomWords[Math.floor(Math.random() * 4)];
+
+      console.log("Your " + randomBodyPart + " is like a " + randomAdjective + " " + randomWord);
+
+    </script>
+  </body>
+
+</html>

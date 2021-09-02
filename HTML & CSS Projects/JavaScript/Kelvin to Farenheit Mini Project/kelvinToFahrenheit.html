@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+  </head>
+
+  <body>
+
+    <script>
+      //Temp in Kelvin stored in a var
+      var kelvinTemp = 301;
+
+      //Temp in Celsius stored in a var
+      var celsiusTemp = kelvinTemp - 273.15;
+
+      var fahrenheitTemp = celsiusTemp * (9/5) + 32;
+
+      //fahrenheitTemp = Math.floor(fahrenheitTemp);
+
+      console.log(Math.floor(fahrenheitTemp)); //Round down
+      console.log(Math.ceil(fahrenheitTemp)); //Round up
+      console.log(Math.round(fahrenheitTemp)); //Normal Rounding Function in Math
+      console.log("The Temperature is " + Math.round(fahrenheitTemp) + " degrees Fahrenheit");
+    </script>
+
+  </body>
+</html>

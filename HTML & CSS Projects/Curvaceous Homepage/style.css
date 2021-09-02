@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", san-serif;
+  color: white;
+  background: #202731;
+  overflow-x: hidden;
+}
+
+
+section {
+    position: relative;
+    display: flex; /*Can look at the properties in inspection Google Chrome*/ 
+    flex-direction: column; 
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw; /*vw = viewport width*/
+}
+
+.blue {
+  background: #3c31dd;
+}
+
+.red {
+  background: #dd3f31;
+}
+
+.pink {
+  background: #ff0066;
+}
+
+.dark {
+  background: #0f0f10;
+}
+
+.curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.curve::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%; /*Creates an ellipse*/
+  width: 55%;
+  height: 100%;
+  background: #202731;
+  transform: translate(85%, 60%);
+}
+
+.curve::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%; /*Creates an ellipse*/
+  width: 55%;
+  height: 100%;
+  background: #3c31dd;
+  transform: translate(-4%, 40%);
+  z-index: -1; /*This ensures the darker element will sit on top of the lighter one*/
+}
+
+.bubble::after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  background-color: #0f0f10;
+  height: 85%;
+}
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 229px;
+}
+
+.wave .shape-fill {
+  fill: #E47B3A;
+}
+
+.spacer {
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('./layered-waves-haikei.svg');
+}
+
+.layer2 {
+  background-image: url('./stacked-waves-haikei.svg');
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+.blob-motion {
+  position: absolute;
+  transform: translateY(-20%);
+}
