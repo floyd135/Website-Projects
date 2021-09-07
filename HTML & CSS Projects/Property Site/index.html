@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Property Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="hero">
+      <nav>
+        <div class="logo">
+          <img src="Images/logo.png">
+        </div>
+        <button type="button">List Property</button>
+        <img src="Images/menu.png" class="menu-icon">
+      </nav>
+
+      <div class="row">
+        <div class="col-1">
+          <h1>Explore <br> Best Property</h1>
+          <p>You Can Explore The Best Property Near You Or Location YOu Want To Get The Property.</p>
+          <button type="button">Explore Properties</button>
+
+          <ul>
+            <li class="btn active"></li>
+            <li class="btn"></li>
+            <li class="btn"></li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <img src="Images/pic1.png" alt="First Property" id="banner">
+        </div>
+      
+    </div>
+
+    <script> //Linking on the dots at the bottom
+      var btn = document.getElementsByClassName("btn");
+      var banner = document.getElementById("banner");
+
+      btn[0].onclick = function() {
+        banner.src = "Images/pic1.png";
+        animation();
+        this.classList.add("active");
+      }
+
+      btn[1].onclick = function() {
+        banner.src = "Images/pic2.png";
+        animation();
+        this.classList.add("active");
+      }
+
+      btn[2].onclick = function() {
+        banner.src = "Images/pic3.png";
+        animation();
+        this.classList.add("active");
+      }
+
+      
+      function animation() {
+        banner.classList.add("zoom"); //If there is only this line, the animation will work only once 
+        setTimeout(function() { //This removes the class zoom after 0.5s
+        banner.classList.remove("zoom");
+        }, 500)
+
+        for (b of btn) {
+          b.classList.remove("active");
+        }
+      }
+      
+    </script>
+
+  </body>
+</html>
