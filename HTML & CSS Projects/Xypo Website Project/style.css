@@ -18,7 +18,8 @@
 }
 
 .logo{
-  margin-top: 30px;
+position: fixed;
+  margin-top: -100px;
   width: 100px;
 }
 
